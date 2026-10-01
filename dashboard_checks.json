@@ -1,0 +1,10 @@
+{
+  "method": "Node VM with minimal DOM stubs; not a rendered-browser test",
+  "baseline_scores_match_python": true,
+  "growth_scenario_matches_python": true,
+  "agency_filter": true,
+  "zero_weight_fallback": true,
+  "csv_download_handler": true,
+  "svg_generation_finite": true,
+  "visual_browser_check": "Not completed: browser launch blocked by environment socket restrictions"
+}

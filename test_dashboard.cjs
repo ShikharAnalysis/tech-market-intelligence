@@ -1,0 +1,23 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const root=require('path').resolve(__dirname,'..')+require('path').sep;
+const html=fs.readFileSync(root+'index.html','utf8');
+const data=JSON.parse(html.match(/<script id="project-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
+const scripts=[...html.matchAll(/<script(?: [^>]*)?>([\s\S]*?)<\/script>/g)];
+const elements={};
+for(const [,id] of html.matchAll(/\bid="([^"]+)"/g))elements[id]={value:'',textContent:'',innerHTML:'',append(){}};
+Object.assign(elements['project-data'],{textContent:JSON.stringify(data)});
+['size','growth','fragmentation'].forEach((k,i)=>elements[k].value=[35,35,30][i]);elements.agency.value='all';elements.scenario.value='balanced';
+let downloadClicked=false;
+const context={document:{getElementById:id=>{assert(elements[id],id);return elements[id]},createElement:tag=>({click(){downloadClicked=true}})},Blob,URL:{createObjectURL:()=> 'blob:test',revokeObjectURL(){}},setTimeout:fn=>fn()};
+vm.createContext(context);vm.runInContext(scripts.at(-1)[1],context);
+const current=()=>JSON.parse(vm.runInContext('JSON.stringify(current)',context));
+assert.equal(current().length,12);
+for(let i=0;i<12;i++)assert(Math.abs(current()[i].score-data.ranking[i].score)<1e-9);
+elements.scenario.value='growth_led';elements.scenario.onchange();
+for(const r of current()){const expected=data.sensitivity.find(s=>s.scenario==='growth_led'&&s.agency===r.agency&&s.naics===r.naics);assert.equal(r.liveRank,expected.rank);assert(Math.abs(r.score-expected.score)<1e-9)}
+elements.agency.value='Department of Energy';elements.agency.onchange();assert.equal(current().length,3);
+['size','growth','fragmentation'].forEach(k=>{elements[k].value=0;elements[k].oninput()});assert(elements.weightNote.textContent.includes('equal weights'));assert(current().every(r=>Number.isFinite(r.score)));
+elements.download.onclick();assert(downloadClicked);
+assert(elements.scatter.innerHTML.includes('<svg'));assert(!elements.scatter.innerHTML.includes('NaN'));assert(!elements.trend.innerHTML.includes('NaN'));
+const results={method:'Node VM with minimal DOM stubs; not a rendered-browser test',baseline_scores_match_python:true,growth_scenario_matches_python:true,agency_filter:true,zero_weight_fallback:true,csv_download_handler:true,svg_generation_finite:true,visual_browser_check:'Not completed: browser launch blocked by environment socket restrictions'};
+fs.writeFileSync(root+'reports/dashboard_checks.json',JSON.stringify(results,null,2));console.log(results);

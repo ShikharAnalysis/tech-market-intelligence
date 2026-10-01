@@ -1,0 +1,98 @@
+[
+  {
+    "agency": "Department of Energy",
+    "naics": "541511",
+    "difference_usd": 0.0,
+    "tolerance_usd": 0.24,
+    "exact_match": true,
+    "passed": true
+  },
+  {
+    "agency": "Department of Energy",
+    "naics": "541512",
+    "difference_usd": 0.0,
+    "tolerance_usd": 0.175,
+    "exact_match": true,
+    "passed": true
+  },
+  {
+    "agency": "Department of Energy",
+    "naics": "541519",
+    "difference_usd": -0.01,
+    "tolerance_usd": 0.825,
+    "exact_match": false,
+    "passed": true
+  },
+  {
+    "agency": "Department of Health and Human Services",
+    "naics": "541511",
+    "difference_usd": -0.03,
+    "tolerance_usd": 1.595,
+    "exact_match": false,
+    "passed": true
+  },
+  {
+    "agency": "Department of Health and Human Services",
+    "naics": "541512",
+    "difference_usd": 0.0,
+    "tolerance_usd": 2.075,
+    "exact_match": true,
+    "passed": true
+  },
+  {
+    "agency": "Department of Health and Human Services",
+    "naics": "541519",
+    "difference_usd": -0.03,
+    "tolerance_usd": 2.375,
+    "exact_match": false,
+    "passed": true
+  },
+  {
+    "agency": "Department of Veterans Affairs",
+    "naics": "541511",
+    "difference_usd": -0.04,
+    "tolerance_usd": 0.945,
+    "exact_match": false,
+    "passed": true
+  },
+  {
+    "agency": "Department of Veterans Affairs",
+    "naics": "541512",
+    "difference_usd": -0.01,
+    "tolerance_usd": 0.575,
+    "exact_match": false,
+    "passed": true
+  },
+  {
+    "agency": "Department of Veterans Affairs",
+    "naics": "541519",
+    "difference_usd": -0.02,
+    "tolerance_usd": 1.895,
+    "exact_match": false,
+    "passed": true
+  },
+  {
+    "agency": "National Aeronautics and Space Administration",
+    "naics": "541511",
+    "difference_usd": 0.0,
+    "tolerance_usd": 0.34,
+    "exact_match": true,
+    "passed": true
+  },
+  {
+    "agency": "National Aeronautics and Space Administration",
+    "naics": "541512",
+    "difference_usd": -0.01,
+    "tolerance_usd": 0.16,
+    "exact_match": false,
+    "passed": true
+  },
+  {
+    "agency": "National Aeronautics and Space Administration",
+    "naics": "541519",
+    "difference_usd": -0.01,
+    "tolerance_usd": 1.29,
+    "exact_match": false,
+    "passed": true
+  }
+]

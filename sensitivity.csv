@@ -1,0 +1,49 @@
+scenario,agency,naics,rank,score
+balanced,Department of Veterans Affairs,541511,1,87.1475151108871
+balanced,Department of Health and Human Services,541512,2,68.16751503672485
+balanced,Department of Veterans Affairs,541519,3,67.19781444433876
+balanced,Department of Veterans Affairs,541512,4,66.28649811381457
+balanced,Department of Energy,541519,5,66.10775321656209
+balanced,Department of Health and Human Services,541519,6,64.41119870716112
+balanced,National Aeronautics and Space Administration,541519,7,57.49913704833585
+balanced,Department of Health and Human Services,541511,8,57.350654970461534
+balanced,Department of Energy,541511,9,51.968322741533036
+balanced,National Aeronautics and Space Administration,541512,10,45.375898670748114
+balanced,Department of Energy,541512,11,31.233499947325544
+balanced,National Aeronautics and Space Administration,541511,12,29.40672000678102
+size_led,Department of Veterans Affairs,541511,1,80.95441262343121
+size_led,Department of Health and Human Services,541512,2,80.58986457224985
+size_led,Department of Veterans Affairs,541512,3,80.35945315244035
+size_led,Department of Veterans Affairs,541519,4,77.55956051970034
+size_led,Department of Health and Human Services,541519,5,74.39001175464475
+size_led,Department of Health and Human Services,541511,6,67.73187302238664
+size_led,Department of Energy,541519,7,63.41191548363045
+size_led,National Aeronautics and Space Administration,541519,8,56.46504594803042
+size_led,Department of Energy,541511,9,46.96603560402263
+size_led,National Aeronautics and Space Administration,541512,10,45.70447115823404
+size_led,Department of Energy,541512,11,43.43097025213125
+size_led,National Aeronautics and Space Administration,541511,12,19.169090597711097
+growth_led,Department of Veterans Affairs,541511,1,92.38415529669687
+growth_led,Department of Energy,541519,2,61.20518119964105
+growth_led,Department of Energy,541511,3,49.881918594548374
+growth_led,Department of Veterans Affairs,541519,4,49.40287610989784
+growth_led,National Aeronautics and Space Administration,541519,5,49.22409889081006
+growth_led,National Aeronautics and Space Administration,541512,6,47.842586439225315
+growth_led,Department of Health and Human Services,541512,7,47.68832382304728
+growth_led,Department of Veterans Affairs,541512,8,46.33800023367276
+growth_led,Department of Health and Human Services,541519,9,44.26415671886641
+growth_led,Department of Health and Human Services,541511,10,35.552124249209605
+growth_led,Department of Energy,541512,11,27.959886770327135
+growth_led,National Aeronautics and Space Administration,541511,12,24.393763479426084
+fragmentation_led,Department of Veterans Affairs,541511,1,88.58220856335628
+fragmentation_led,Department of Health and Human Services,541512,2,80.25277755395372
+fragmentation_led,Department of Health and Human Services,541519,3,79.66354211837779
+fragmentation_led,Department of Veterans Affairs,541519,4,78.34760283295779
+fragmentation_led,Department of Energy,541519,5,77.50536784134111
+fragmentation_led,Department of Veterans Affairs,541512,6,75.09981237608865
+fragmentation_led,Department of Health and Human Services,541511,7,74.47662397445178
+fragmentation_led,National Aeronautics and Space Administration,541519,8,71.46283093508265
+fragmentation_led,Department of Energy,541511,9,62.60135966827565
+fragmentation_led,National Aeronautics and Space Administration,541511,10,52.28259891141831
+fragmentation_led,National Aeronautics and Space Administration,541512,11,41.183008286803435
+fragmentation_led,Department of Energy,541512,12,17.847714255614598

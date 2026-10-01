@@ -1,0 +1,16 @@
+{
+  "source": "USAspending live API snapshot",
+  "synthetic_data": false,
+  "first_retrieval_utc": "2026-10-01T03:31:41.873692+00:00",
+  "last_retrieval_utc": "2026-10-01T03:35:41.888670+00:00",
+  "source_files": 36,
+  "recipient_year_rows": 7704,
+  "expected_segments": 36,
+  "observed_segments": 36,
+  "missing_recipient_ids": 0,
+  "negative_rows": 737,
+  "duplicate_keys": 0,
+  "raw_hashes_verified": true,
+  "sql_python_totals_match": true,
+  "sql_python_concentration_match": true
+}
