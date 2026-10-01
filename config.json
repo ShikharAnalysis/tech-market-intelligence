@@ -1,0 +1,7 @@
+{
+  "years": [2023, 2024, 2025],
+  "agencies": ["Department of Veterans Affairs", "Department of Health and Human Services", "Department of Energy", "National Aeronautics and Space Administration"],
+  "categories": {"541511": "Custom Computer Programming Services", "541512": "Computer Systems Design Services", "541519": "Other Computer Related Services"},
+  "weights": {"size": 0.35, "growth": 0.35, "fragmentation": 0.30},
+  "minimum_latest_spend": 10000000
+}
